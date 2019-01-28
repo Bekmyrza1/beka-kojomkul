@@ -105,7 +105,9 @@
 				// $this->db->count_all('ex_page',array('id_parent'=>$item['id']));
 
           ?>
-           <li>
+           <li 
+           
+           >
             <a href="<?php echo $item['url'];?>"><?php echo $item['name_kg'];?>
             	<?php
             	if ($item['id_page']==1 ) {

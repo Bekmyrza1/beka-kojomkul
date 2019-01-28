@@ -20,7 +20,6 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_page');
             return $query->result_array();
     }
-
 }    
 
 
