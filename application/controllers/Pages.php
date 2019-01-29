@@ -38,7 +38,6 @@ class Pages extends CI_Controller {
         $this->load->view('footer_view');
 	}
 
-
 	public function contact()
 	{
 		$this->load->model('Get_model');
@@ -47,7 +46,6 @@ class Pages extends CI_Controller {
 		$this->load->view('head_view');
         $this->load->view('header_view',$data);
         
-
         $this->load->view('footer_view');
 	}
 

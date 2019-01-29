@@ -99,33 +99,25 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="<?php echo base_url();?>">Башкы бет</a></li>
           <?php 
-          
 			foreach ($md_menu  as $item) {
-				// $this->db->where('id_parent', $item['id']);
-				// $this->db->count_all('ex_page',array('id_parent'=>$item['id']));
-
           ?>
-           <li 
-           
-           >
+           <li>
             <a href="<?php echo $item['url'];?>"><?php echo $item['name_kg'];?>
             	<?php
-            	if ($item['id_page']==1 ) {
-            		echo '<b class="caret"></b>';
-       	 		}
-           		?>
-            </a>
-            <ul class="firstchild">
-            	<?php
+            	if ($item['id_page']==1 ) 
+            		{echo '<b class="caret"></b>';}?></a>
+            <?php
             	if ($item['id_page']==1) {
-				?>
+            		?>
+              <ul class="firstchild">
             	<li><a href="">Факультеттер</a></li>
             	<?php
 	            	foreach ($md_menuu as $item1) {
 	            		echo '<li><a href="'.$item1['url'].'"> '.$item1['name_kg'].'</a></li>';
-            		}}
+            		}
             	?>
             </ul>
+        <?php } ?>
           </li>
         <?php
       }
@@ -134,7 +126,7 @@
         <form class="navbar-form navbar-right" role="search">
         	<!-- <ul class="nav navbar-nav navbar-right"> -->
           <div class="form-group">
-            <input type="text" class="form-control"  placeholder="Search..">
+            <input type="text" class="form-control"  placeholder="Поиск...">
           <button type="submit" class="searglif" ><span class="glyphicon glyphicon-search"></span></button>
           </div>
          <!-- </ul> -->
