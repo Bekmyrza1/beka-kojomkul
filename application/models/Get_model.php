@@ -9,17 +9,14 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_menu');
             return $query->result_array();
     }
-    function md_menuu() {
-            $query = $this->db->where('id_parent',$query);
+    function md_menuu($id) {
+            $query = $this->db->where('id_parent', $id);
             $query = $this->db->get('ex_menu');
             return $query->result_array();
     }
-    //     function md_page($id) {
-    //             $query = $this->db->where('id', $id);
-    //             $query = $this->db->get('ex_page');
-    //             return $query->result_array();
-    //     }
+        function md_page($id) {
+                $query = $this->db->where('id', $id);
+                $query = $this->db->get('ex_page');
+                return $query->result_array();
+        }
     } 
-
-
-

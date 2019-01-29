@@ -11,9 +11,8 @@ class Pages extends CI_Controller {
 	{
 		$this->load->model('Get_model');
 		$data['md_menu'] = $this->Get_model->md_menu(2);
-
 		$this->load->view('head_view');
-		$data['md_menuu'] = $this->Get_model->md_menuu();
+		
         $this->load->view('header_view',$data);
         $this->load->view('carusel_view');
         $this->load->view('undermenu_view');
@@ -30,6 +29,7 @@ class Pages extends CI_Controller {
 		$this->load->model('Get_model');
 		$data['md_menu'] = $this->Get_model->md_menu(2);
 		$data['md_page'] = $this->Get_model->md_page($id);
+
 				
 		$this->load->view('head_view');
         $this->load->view('header_view',$data);
@@ -45,7 +45,7 @@ class Pages extends CI_Controller {
 
 		$this->load->view('head_view');
         $this->load->view('header_view',$data);
-        
+
         $this->load->view('footer_view');
 	}
 
