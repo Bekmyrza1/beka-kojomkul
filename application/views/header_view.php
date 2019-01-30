@@ -23,9 +23,9 @@
 </ul> -->
 <!-- </div> -->
 <ul class="topsocial1">
-	<li><a href="#">Образовательный портал</a></li>
-	<li><a href="#">ТЕСТ</a></li>
-	<li><a href="#">Поиск студентов</a></li>
+	<li><a href="http://avn.oshsu.kg/avn11.html">Образовательный портал</a></li>
+	<li><a href="http://avn.oshsu.kg/avn10.html">ТЕСТ</a></li>
+	<li><a href="http://avn.oshsu.kg/AVN_search_st.html">Поиск студентов</a></li>
 	<!-- <li><a href="#">Blog</a></li> -->
 </ul>
 </div>
@@ -117,10 +117,15 @@
 							?>             	
 							<li><a href=""><?php echo $item1['name_kg'];?></a></li>
 							<?php
-							$under_menu= $this->Get_model->md_menuu($item1['id']);
+							$under_menu = $this->Get_model->md_menuu($item1['id']);
 							foreach ($under_menu as $item2)
 							{
-								echo '<li><a href="'.base_url().$item2['url'].'"> '.$item2['name_kg'].'</a></li>';
+								echo '<li><a href="';
+
+								if($item2['url']==false) {echo base_url('pages/page/').$item2['id_page'];} 
+								else {echo $item2['url'];}
+
+								echo '">'.$item2['name_kg'].'</a></li>';
 							}
 						}
 						?>
