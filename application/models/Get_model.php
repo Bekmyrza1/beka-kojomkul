@@ -15,8 +15,13 @@ class Get_model extends CI_Model {
             return $query->result_array();
     }
         function md_page($id) {
-                $query = $this->db->where('id', $id);
-                $query = $this->db->get('ex_page');
-                return $query->result_array();
+            $query = $this->db->where('id', $id);
+            $query = $this->db->get('ex_page');
+            return $query->result_array();
+        }
+        function md_news($id) {
+            $query = $this->db->where('id_type_page', 1);
+            $query = $this->db->get('ex_page');
+            return $query->result_array();
         }
     } 

@@ -1190,6 +1190,8 @@ h2 {
 	color: #fff;
 	font-size: 2.8em;
 	/*background-color: rgba(255,255,255,0.7);*/
+	font-weight: bold;
+	font-family: Calibri;
 }
 .news1{
  width: 100%;
