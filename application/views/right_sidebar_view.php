@@ -1,33 +1,5 @@
-      <div class="pictureundermenu">
-      	<div class="container">
-      	<div class="themescriptonpicture">
-		<?php
-		foreach ($md_page as $page1) {
-			echo $page1['tema_kg'];
-		}
-		?>
-      	</div>
-      </div>
-      </div>
-
- <div class="container">
-		<div class="row">
-		<div class="col-md-8">
-		<div class="borderblog">	
-			<div class="tab-content">
-			  <div class="tab-pane active" id="home">
-		<?php
-		foreach ($md_page as $page1) {
-			echo $page1['page_text_kg'];
-		}
-		?>	
-			  </div>
-			</div>
-
-	</div>
-	</div>
-
-
+<div class="container">
+	
 	<div class="col-md-4">
 		<div class="borderblog2">
 			<div class="topsocial2"> 
@@ -60,5 +32,4 @@
 			<?php endforeach ?>
 		</div>
 	</div>
-</div>
 </div>

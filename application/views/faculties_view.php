@@ -42,22 +42,24 @@
 		</div>
 
 		<div class="borderblog2">
-		<?php foreach ($right_menu1 as $r_m_1): ?>
-			<a class="underslider_b" href="#"><span class="underslider_b_span"><img src="<?php echo base_url().'assets/images/flaticonsvg/ico'. $r_m_1['id'].'.svg' ?>"></span><span><?php echo $r_m_1['name_kg']; ?></span></a>
-		<?php endforeach ?>
+		<a class="underslider_b" href="#"><span class="underslider_b_span"><img src="<?php echo base_url().'assets/images/flaticonsvg/schoolboy-carrying-a-bag.svg' ?>"></span><span>Абитуриенттерге</span></a>
+		<a class="underslider_b" href="#"><span class="underslider_b_span"><img src="<?php echo base_url().'assets/images/flaticonsvg/study.svg' ?>"></span><span>Студенттерге</span></a>
+		<a class="underslider_b" href="#"><span class="underslider_b_span"><img src="<?php echo base_url().'assets/images/flaticonsvg/graduate-student-avatar.svg' ?>"></span><span>Бүтүрүүчүлөргө</span></a>
+		<a class="underslider_b" href="#"><span class="underslider_b_span"><img src="<?php echo base_url().'assets/images/flaticonsvg/classroom.svg' ?>"></span><span>Мугалимдерге</span></a>
 		</div>
 		<div class="borderblog2">
 			<p>Билим берүү ресурстары</p>
 			<ul>
-				<?php foreach ($right_menu2 as $r_m_2): ?>
-					<li><a href=""><?php echo $r_m_2['name_kg']; ?></a></li>
-				<?php endforeach ?>
+				<li><a href="">ibooks.oshsu.kg</a></li>
+				<li><a href="">okuma.kg</a></li>
+				<li><a href="">Ош МУнун китепканасы</a></li>
+				<li><a href="">Ош МУнун расмий сайты</a></li>
 			</ul>
 		</div>
 		<div class="borderblog2">
-			<?php foreach ($right_menu3 as $r_m_3): ?>
-					<a class="underslider_с" href="#"><i class="fa fa-book" aria-hidden="true"></i><span><?php echo $r_m_3['name_kg']; ?></span></a>
-			<?php endforeach ?>
+			<a class="underslider_с" href="#"><i class="fa fa-book" aria-hidden="true"></i> <span>Билим берүү порталы</span></a>
+			<a class="underslider_с" href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> <span>Сабактардын жадыбалы</span></a>
+			<a class="underslider_с" href="#"><i class="fa fa-comments" aria-hidden="true"></i><span>Онлайн тестирлөө</span></a>
 		</div>
 	</div>
 </div>

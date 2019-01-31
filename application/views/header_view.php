@@ -124,7 +124,6 @@
 
 								if($item2['url']==false) {echo base_url('pages/page/').$item2['id_page'];} 
 								else {echo $item2['url'];}
-
 								echo '">'.$item2['name_kg'].'</a></li>';
 							}
 						}

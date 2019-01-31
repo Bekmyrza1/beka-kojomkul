@@ -57,5 +57,24 @@
 <script src="<?php echo base_url('assets/js/jquery-3.3.1.js');?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
 <script src="<?php echo base_url('assets/js/index.js');?>"></script>
+<script type="text/javascript">
+	
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  arrows: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+</script>
 </body>
 </html>
