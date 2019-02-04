@@ -31,7 +31,7 @@
 					<!-- <div class="trainingcurtain1"></div> -->
 				</div>
 					<div class="trainingtheme">
-					<p>Фотогалеря</p>
+					<p>Фотогалерея</p>
 					</div>
 				</a>
 				</div>

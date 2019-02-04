@@ -12,6 +12,7 @@ class Pages extends CI_Controller {
 		$this->load->model('Get_model');
 		$data['md_menu'] = $this->Get_model->md_menu(2);
 		$this->load->view('head_view');
+    $data['md_news'] = $this->Get_model->md_news(1);
     $this->load->view('header_view',$data);
     $this->load->view('carusel_view');
     $this->load->view('undermenu_view');
@@ -62,7 +63,8 @@ class Pages extends CI_Controller {
 		$data['right_menu3'] = $this->Get_model->md_menuu(75);
 		$this->load->view('head_view');
     $this->load->view('header_view',$data);
-    $data['md_news'] = $this->Get_model->md_news(1);
+    $data['md_news'] = $this->Get_model->md_news($id);
+    $data['md_in_news'] = $this->Get_model->md_in_news($id);
     $this->load->view('inner_news_view',$data);
     $this->load->view('right_sidebar_view',$data);
     $this->load->view('footer_view');

@@ -1,5 +1,3 @@
-<div class="container">
-	
 	<div class="col-md-4">
 		<div class="borderblog2">
 			<div class="topsocial2"> 
