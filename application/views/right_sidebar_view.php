@@ -1,7 +1,11 @@
 <div class="container">
 	
+<<<<<<< HEAD
 	<div class="col-md-4 ">
 		<div class="row">
+=======
+	<div class="col-md-4">
+>>>>>>> 55235dac6bab3839a1b44ebfe439bdafd864026d
 		<div class="borderblog2">
 			<div class="topsocial2"> 
 			<ul class="topsocialul">
@@ -33,5 +37,9 @@
 			<?php endforeach ?>
 		</div>
 	</div>
+<<<<<<< HEAD
 	</div>
 </div>
+=======
+</div>
+>>>>>>> 55235dac6bab3839a1b44ebfe439bdafd864026d

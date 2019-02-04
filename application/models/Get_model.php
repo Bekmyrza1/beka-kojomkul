@@ -24,6 +24,7 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_page');
             return $query->result_array();
         }
+<<<<<<< HEAD
         function under_menu($id) {
             $query = $this->db->where('id_parent', $id);
             $query = $this->db->get('ex_menu');
@@ -34,4 +35,6 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_menu');
             return $query->result_array();
     }
+=======
+>>>>>>> 55235dac6bab3839a1b44ebfe439bdafd864026d
     } 
