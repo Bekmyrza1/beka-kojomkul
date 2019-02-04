@@ -6,7 +6,7 @@
 				</div>
 			</div>
 			<div class="container">
-		<?php foreach ($md_news as $news): ?>
+		<?php foreach ($md_in_news as $news): ?>
 				<div class="col-md-8">
 		<div class="borderblog">
 		<h1><?php echo $news['tema_kg'] ?></h1>
