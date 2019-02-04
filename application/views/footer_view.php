@@ -57,6 +57,7 @@
 <script src="<?php echo base_url('assets/js/jquery-3.3.1.js');?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
 <script src="<?php echo base_url('assets/js/index.js');?>"></script>
+<script src="<?php echo base_url('assets/js/slick.min.js');?>"></script>
 <script type="text/javascript">
 	
  $('.slider-for').slick({
