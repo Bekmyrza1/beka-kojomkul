@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="colimg col-md-6">
 					<div class="newsimg">
-						<img src="<?php echo base_url().$news['foto'];?>">
+						<img src="<?php echo base_url('assets/images/photos/thumb/').$news['foto'];?>">
 						<div class="bluecurtain">
 							<?php 
 						echo '<a class="bluebutton" href="';
