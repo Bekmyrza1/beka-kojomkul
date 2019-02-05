@@ -13,9 +13,11 @@ class Pages extends CI_Controller {
 		$data['md_menu'] = $this->Get_model->md_menu(2);
 		$this->load->view('head_view');
     $data['md_news'] = $this->Get_model->md_news(1);
+    $data['under_menu'] = $this->Get_model->under_menu(65);
+    $data['train_menu'] = $this->Get_model->train_menu(66);
     $this->load->view('header_view',$data);
     $this->load->view('carusel_view');
-    $this->load->view('undermenu_view');
+    $this->load->view('undermenu_view',$data);
     $this->load->view('enaunsment_view');
     $this->load->view('training_view');
     $this->load->view('news_view');
