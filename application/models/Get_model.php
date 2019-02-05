@@ -24,19 +24,19 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_page');
             return $query->result_array();
         }
-        function under_menu($id) {
-            $query = $this->db->where('id_parent', $id);
-            $query = $this->db->get('ex_menu');
-            return $query->result_array();
-    }
-    function train_menu($id) {
-            $query = $this->db->where('id_parent', $id);
-            $query = $this->db->get('ex_menu');
-            return $query->result_array();
-    }
         function md_in_news($id) {
             $query = $this->db->where('id', $id);
             $query = $this->db->get('ex_page');
+            return $query->result_array();
+        }
+         function under_menu($id) {
+            $query = $this->db->where('id_parent', $id);
+            $query = $this->db->get('ex_menu');
+            return $query->result_array();
+        } 
+        function train_menu($id) {
+            $query = $this->db->where('id_parent', $id);
+            $query = $this->db->get('ex_menu');
             return $query->result_array();
         }
     } 
